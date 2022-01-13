@@ -5,7 +5,7 @@ from utils.paths import PATHS
 from years.AoC2021.tasks import TASKS2021
 
 # Constants
-PARALLEL_COMPUTATION = True
+PARALLEL_COMPUTATION = False
 TASKS = {
     2021: TASKS2021
 }
@@ -55,4 +55,4 @@ if __name__ == "__main__":
     # Wait for processes to stop and report success
     for process in processes:
         process.join()
-    print(f"\n*** All {num_tests} tests completed successfully in {time.perf_counter() - start:.2f} sec***")
+    print(f"\n*** {num_tests} tests completed successfully in {time.perf_counter() - start:.2f} sec***")
