@@ -3,11 +3,13 @@ import time
 from multiprocessing import Process
 from utils.paths import PATHS
 from years.AoC2021.tasks import TASKS2021
+from years.AoC2022.tasks import TASKS2022
 
 # Constants
 PARALLEL_COMPUTATION = True
 TASKS = {
-    2021: TASKS2021
+    # 2021: TASKS2021,
+    2022: TASKS2022,
 }
 
 
