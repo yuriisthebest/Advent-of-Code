@@ -5,7 +5,7 @@ from utils.paths import PATHS
 from years.AoC2021.tasks import TASKS2021
 
 # Constants
-PARALLEL_COMPUTATION = False
+PARALLEL_COMPUTATION = True
 TASKS = {
     2021: TASKS2021
 }
@@ -18,7 +18,7 @@ def asses_task(task: type, answers: dict, year: int) -> None:
 
     :param task: Task object able to run a task
     :param answers: The correct answers of the given task
-    :param year: The year where this task was asked
+    :param year: The year when this task was asked
     """
     t = task()
     pred = t.run_all()
@@ -46,7 +46,7 @@ if __name__ == "__main__":
         for i, current_task in enumerate(TASKS[year_num]):
             num_tests += 1
             if PARALLEL_COMPUTATION:
-                p = Process(target=asses_task, args=[current_task, year_answers, year_num])
+                p = Process(target=asses_task, args=(current_task, year_answers, year_num))
                 p.start()
                 processes.append(p)
             else:
