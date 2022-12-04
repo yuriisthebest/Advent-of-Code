@@ -2,7 +2,7 @@ from years.AoC2022.task_1 import Task1
 from years.AoC2022.task_2 import Task2
 from years.AoC2022.task_3 import Task3
 from years.AoC2022.task_4 import Task4
-# from years.AoC2022.task_5 import Task5
+from years.AoC2022.task_5 import Task5
 # from years.AoC2022.task_6 import Task6
 # from years.AoC2022.task_7 import Task7
 # from years.AoC2022.task_8 import Task8
@@ -29,7 +29,7 @@ TASKS2022 = [
     Task2,
     Task3,
     Task4,
-    # Task5,
+    Task5,
     # Task6,
     # Task7,
     # Task8,
