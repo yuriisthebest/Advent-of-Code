@@ -2,10 +2,10 @@ from utils.decorators import timer, debug
 from utils.task import Task
 
 
-class TaskT(Task):
+class Task9999(Task):
     # Task constants
-    YEAR = 2022
-    TASK_NUM = 1
+    YEAR = 8000
+    TASK_NUM = 9999
 
     @debug
     @timer(YEAR, TASK_NUM)
@@ -20,7 +20,7 @@ class TaskT(Task):
 
 if __name__ == "__main__":
     # Load task
-    t = TaskT()
+    t = Task9999()
 
     # Run task
     t.run_all()
