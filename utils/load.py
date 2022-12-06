@@ -1,5 +1,5 @@
-from utils.paths import PATHS
 import json
+import os
 
 
 def __load_json(file_path: str):
@@ -31,11 +31,33 @@ def __load_txt(file_path: str):
     return data
 
 
-def __load_task(func, extension: str, year: int, task_num: int):
-    folder = PATHS[year]
+def __load_task(func, extension: str, year: int, task_num: int) -> tuple:
+    """
+    General purpose function to load a task
+
+    :param func: The function to load from json, txt or other datasource
+    :param extension: The extension json or txt
+    :param year: The year from which the task is
+    :param task_num: The dat from which the task is
+    :return: tuple with testdata first and the real task data second
+    """
+    folder = os.getcwd().replace(f"\\years\\AoC{year}", "") + f"\\years\\AoC{year}\\data"
     test = func(f"{folder}\\task{task_num}_test.{extension}")
     task = func(f"{folder}\\task{task_num}_data.{extension}")
     return test, task
+
+
+def load_answers(year_num: int) -> dict:
+    """
+    Read and return the answers of the tasks of a specific year
+
+    :param year_num: the year associated with the answers
+    :return: test and task answers for both parts of every day of the given year
+    """
+    with open(os.getcwd().replace(f"\\years\\AoC{year_num}", "")
+              + f"\\years\\AoC{year_num}\\data\\answers.json") as f:
+        year_answers = json.load(f)
+    return year_answers
 
 
 def load_task_json(year: int, task_num: int):

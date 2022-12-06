@@ -1,7 +1,6 @@
-import json
 import time
 from multiprocessing import Process
-from utils.paths import PATHS
+from utils.load import load_answers
 from years.AoC2021.tasks import TASKS2021
 from years.AoC2022.tasks import TASKS2022
 
@@ -41,8 +40,7 @@ if __name__ == "__main__":
     processes = []
     for year_num in TASKS.keys():
         # Find the answers of the current year
-        with open(f"{PATHS[year_num]}\\answers.json") as f:
-            year_answers = json.load(f)
+        year_answers = load_answers(year_num)
 
         # Compute task results (unknown answers have a value of -1)
         for i, current_task in enumerate(TASKS[year_num]):
