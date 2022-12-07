@@ -51,4 +51,4 @@ def generate_year(year: int) -> None:
 
 
 if __name__ == "__main__":
-    generate_year(6000)
+    generate_year(2022)
