@@ -7,6 +7,7 @@ class Task:
     # Task constants
     YEAR = 2021
     TASK_NUM = 2
+    TEST_MODE = False
 
     def load(self) -> tuple:
         test, task = load.load_task_txt(self.YEAR, self.TASK_NUM)
@@ -35,13 +36,13 @@ class Task:
     def run_part_1(self):
         # Run part 1
         test1 = self.part_1(self.test)
-        task1 = self.part_1(self.task)
+        task1 = self.part_1(self.task) if not self.TEST_MODE else None
         return test1, task1
 
     def run_part_2(self):
         # Run part 2
         test2 = self.part_2(self.test)
-        task2 = self.part_2(self.task)
+        task2 = self.part_2(self.task) if not self.TEST_MODE else None
         return test2, task2
 
     def run_all(self):
