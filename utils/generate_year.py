@@ -35,6 +35,13 @@ def generate_year(year: int) -> None:
     template = template.replace('9999', str(year))
     with open(new_folder + "tasks.py", 'w') as tasks:
         tasks.write(template)
+    # Yearly README (OVERWRITE PROTECTED)
+    if not os.path.exists(new_folder + f"README.md"):
+        with open(template_folder + "README.md", 'r') as template_file:
+            template = template_file.read()
+        template = template.replace('9999', str(year))
+        with open(new_folder + "README.md", 'w') as readme:
+            readme.write(template)
     # Answers JSON (OVERWRITE PROTECTED)
     if not os.path.exists(new_data_folder + "answers.json"):
         shutil.copy2(template_folder + "answers.json", new_data_folder)
@@ -51,4 +58,4 @@ def generate_year(year: int) -> None:
 
 
 if __name__ == "__main__":
-    generate_year(2022)
+    generate_year(6666)
