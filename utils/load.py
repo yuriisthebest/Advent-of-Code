@@ -41,7 +41,7 @@ def __load_task(func, extension: str, year: int, task_num: int) -> tuple:
     :param task_num: The dat from which the task is
     :return: tuple with testdata first and the real task data second
     """
-    folder = os.getcwd().replace(f"\\years\\AoC{year}", "") + f"\\years\\AoC{year}\\data"
+    folder = os.getcwd().replace(f"\\years\\AoC{year}", "") + f"\\data\\AoC{year}"
     test = func(f"{folder}\\task{task_num}_test.{extension}")
     task = func(f"{folder}\\task{task_num}_data.{extension}")
     return test, task
@@ -55,7 +55,7 @@ def load_answers(year_num: int) -> dict:
     :return: test and task answers for both parts of every day of the given year
     """
     with open(os.getcwd().replace(f"\\years\\AoC{year_num}", "")
-              + f"\\years\\AoC{year_num}\\data\\answers.json") as f:
+              + f"\\data\\AoC{year_num}\\answers.json") as f:
         year_answers = json.load(f)
     return year_answers
 
