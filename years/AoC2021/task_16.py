@@ -1,6 +1,6 @@
 from utils.decorators import timer, debug
 from utils.task import Task
-from utils.colors import textcolors as tc
+from utils.colors import TextColors as Tc
 
 
 HEX_BITS = {
@@ -142,21 +142,21 @@ class Task16(Task):
         """
         Color the characters to visualize the binary formatting
         """
-        output = f"{tc.HEADER}{binary[:3]}{tc.WARNING}{binary[3:6]}"
+        output = f"{Tc.HEADER}{binary[:3]}{Tc.WARNING}{binary[3:6]}"
         # Color numbers
         if type_id == 4:
             i = 6
-            c = tc.OKGREEN
+            c = Tc.OKGREEN
             while i < len(binary):
                 output += f"{c}{binary[i:i+5]}"
-                c = tc.OKBLUE if c == tc.OKGREEN else tc.OKGREEN
+                c = Tc.OKBLUE if c == Tc.OKGREEN else Tc.OKGREEN
                 i += 5
         # Color nested packages
         else:
-            output += f"{tc.OKCYAN}{binary[6]}"
+            output += f"{Tc.OKCYAN}{binary[6]}"
             end = 22 if length_id == 0 else 18
-            output += f"{tc.FAIL}{binary[7:end]}{tc.OKGREEN}{binary[end:]}"
-        return f"{output}{tc.ENDC}"
+            output += f"{Tc.FAIL}{binary[7:end]}{Tc.OKGREEN}{binary[end:]}"
+        return f"{output}{Tc.ENDC}"
 
 
 if __name__ == "__main__":

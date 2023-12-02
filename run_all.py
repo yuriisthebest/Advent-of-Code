@@ -1,14 +1,17 @@
 import time
 from multiprocessing import Process
 from utils.load import load_answers
+from utils.colors import TextColors as Tc
 from years.AoC2021.tasks import TASKS2021
 from years.AoC2022.tasks import TASKS2022
+from years.AoC2023.tasks import TASKS2023
 
 # Constants
-PARALLEL_COMPUTATION = True
+PARALLEL_COMPUTATION = False
 TASKS = {
-    2021: TASKS2021,
+    # 2021: TASKS2021,
     # 2022: TASKS2022,
+    2023: TASKS2023,
 }
 
 
@@ -55,4 +58,5 @@ if __name__ == "__main__":
     # Wait for processes to stop and report success
     for process in processes:
         process.join()
-    print(f"\n*** {num_tests} tests completed successfully in {time.perf_counter() - start:.2f} sec***")
+    end = time.perf_counter()
+    print(f"\n{Tc.OKGREEN}*** {num_tests} tests completed successfully in {end - start:.2f} sec***{Tc.ENDC}")

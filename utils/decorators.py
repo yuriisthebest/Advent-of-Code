@@ -1,7 +1,7 @@
 import time
 import functools
 import numpy as np
-from utils.colors import textcolors as tc
+from utils.colors import TextColors as Tc
 
 
 def timer(year: int, task: int):
@@ -12,8 +12,8 @@ def timer(year: int, task: int):
             start = time.perf_counter()
             value = func(*args, **kwargs)
             run_time = time.perf_counter() - start
-            print(f"{tc.HEADER}Finished {tc.OKBLUE}({year}) task {task} {func.__name__!r}{tc.ENDC} in "
-                  f"{tc.OKCYAN}{run_time:.4f} secs{tc.ENDC}")
+            print(f"{Tc.HEADER}Finished {Tc.OKBLUE}({year}) task {task} {func.__name__!r}{Tc.ENDC} in "
+                  f"{Tc.OKCYAN}{run_time:.4f} secs{Tc.ENDC}")
             return value
         return timer_wrapper
     return timer_decorator
@@ -26,9 +26,9 @@ def debug(func):
         args_repr = [repr(a) for a in args]
         kwargs_repr = [f"{k}={v!r}" for k, v in kwargs.items()]
         signature = ", ".join(args_repr + kwargs_repr)
-        print(f"{tc.HEADER}Calling {func.__name__}({tc.ENDC}{signature}{tc.HEADER}){tc.ENDC}")
+        print(f"{Tc.HEADER}Calling {func.__name__}({Tc.ENDC}{signature}{Tc.HEADER}){Tc.ENDC}")
         value = func(*args, **kwargs)
-        print(f"{tc.OKBLUE}{func.__name__!r}{tc.ENDC} returned {tc.OKCYAN}{value!r}{tc.ENDC}")
+        print(f"{Tc.OKBLUE}{func.__name__!r}{Tc.ENDC} returned {Tc.OKCYAN}{value!r}{Tc.ENDC}")
         return value
     return wrapper_debug
 
@@ -40,9 +40,9 @@ def debug_shape(func):
         args_repr = [repr(a) if not hasattr(a, '__len__') else str(np.shape(a)) for a in args]
         kwargs_repr = [f"{k}={v!r}" for k, v in kwargs.items()]
         signature = ", ".join(args_repr + kwargs_repr)
-        print(f"{tc.HEADER}Calling {func.__name__}({tc.ENDC}{signature}{tc.HEADER}){tc.ENDC}")
+        print(f"{Tc.HEADER}Calling {func.__name__}({Tc.ENDC}{signature}{Tc.HEADER}){Tc.ENDC}")
         value = func(*args, **kwargs)
-        print(f"{tc.OKBLUE}{func.__name__!r}{tc.ENDC} returned {tc.OKCYAN}{value!r}{tc.ENDC}")
+        print(f"{Tc.OKBLUE}{func.__name__!r}{Tc.ENDC} returned {Tc.OKCYAN}{value!r}{Tc.ENDC}")
         return value
     return wrapper_debug
 
