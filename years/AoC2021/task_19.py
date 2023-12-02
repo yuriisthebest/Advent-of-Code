@@ -65,7 +65,7 @@ class Beacon:
         """
         Equality of absolute beacons
         """
-        return self.x == other.x and self.y == other.y and self.z == other.z
+        return self.x == other.column and self.y == other.row and self.z == other.z
 
     def add_neighbor(self, beacon):
         """
@@ -74,7 +74,7 @@ class Beacon:
         :param beacon: Another beacon
         """
         # distance = (self.x - beacon.x) ** 2 + (self.y - beacon.y) ** 2 + (self.z - beacon.z) ** 2
-        distance = [abs(self.x - beacon.x), abs(self.y - beacon.y), abs(self.z - beacon.z)]
+        distance = [abs(self.x - beacon.column), abs(self.y - beacon.row), abs(self.z - beacon.z)]
         self.neighbor_distance.append(distance)
 
     def equal_beacons(self, other):

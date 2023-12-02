@@ -56,7 +56,7 @@ class Task23(Task):
             current_positions = self.position_hashtable(data)
             self.simulate_round(data, directions, current_positions)
         # Calculate score
-        current_positions = [(elf.x, elf.y) for elf in data]
+        current_positions = [(elf.column, elf.row) for elf in data]
         min_x, max_x = min(current_positions)[0], max(current_positions)[0]
         min_y, max_y = min(current_positions, key=lambda x: x[1])[1], max(current_positions, key=lambda x: x[1])[1]
         return ((max_x - min_x + 1) * (max_y - min_y + 1)) - len(current_positions)
@@ -125,9 +125,9 @@ class Task23(Task):
         """
         current_positions = {}
         for elf in data:
-            if elf.x not in current_positions:
-                current_positions[elf.x] = {}
-            current_positions[elf.x][elf.y] = True
+            if elf.column not in current_positions:
+                current_positions[elf.column] = {}
+            current_positions[elf.column][elf.row] = True
         return current_positions
 
 
