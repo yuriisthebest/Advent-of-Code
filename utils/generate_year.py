@@ -11,7 +11,7 @@ def generate_year(year: int) -> None:
     """
     template_folder = os.path.dirname(os.getcwd()) + f"\\templates\\"
     new_folder = os.path.dirname(os.getcwd()) + f"\\years\\AoC{year}\\"
-    new_data_folder = new_folder + "data\\"
+    new_data_folder = os.path.dirname(os.getcwd()) + f"\\data\\AoC{year}\\"
     if not os.path.exists(new_folder):
         os.makedirs(new_folder)
     if not os.path.exists(new_data_folder):
@@ -35,8 +35,15 @@ def generate_year(year: int) -> None:
     template = template.replace('9999', str(year))
     with open(new_folder + "tasks.py", 'w') as tasks:
         tasks.write(template)
+    # Yearly README (OVERWRITE PROTECTED)
+    if not os.path.exists(new_folder + f"README.md"):
+        with open(template_folder + "README.md", 'r') as template_file:
+            template = template_file.read()
+        template = template.replace('9999', str(year))
+        with open(new_folder + "README.md", 'w') as readme:
+            readme.write(template)
     # Answers JSON (OVERWRITE PROTECTED)
-    if not os.path.exists(template_folder + "answers.json"):
+    if not os.path.exists(new_data_folder + "answers.json"):
         shutil.copy2(template_folder + "answers.json", new_data_folder)
     # txt files (OVERWRITE PROTECTED)
     for day in range(1, 26):
@@ -51,4 +58,4 @@ def generate_year(year: int) -> None:
 
 
 if __name__ == "__main__":
-    generate_year(2022)
+    generate_year(6666)
