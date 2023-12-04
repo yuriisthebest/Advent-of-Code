@@ -1,5 +1,5 @@
 # Advent of Code 2023
-![Collected starts](https://img.shields.io/static/v1?style=for-the-badge&logo=apachespark&label=stars&message=6/50&color=success&logoColor=yellow)
+![Collected starts](https://img.shields.io/static/v1?style=for-the-badge&logo=apachespark&label=stars&message=8/50&color=success&logoColor=yellow)
 
 ## Tasks
 A list of the tasks of this year with explanations, difficulty judgements,
@@ -29,10 +29,10 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Create position grid with only numbers and symbols; Merge the digits of numbers so their value and positions are maintained; Using the grid, determine if those positions have non-numeric neighbors / `*`.
 * **Thoughts:** The hardest part was to parse the data correctly into the grid system so numbers and their positions were maintained; After that the trickiest thing to avoid was to not make incorrect assumptions such as: "Each number only appears once on each line", "Each number can only be adjacent to one gears" and "Each gear has always to adjacent numbers"; I only made a mistake with the first assumption, the other were easy to anticipate.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 4: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 4: Scratchcards 
+* **Question:** Determine how many scratchcards are in a pile. Each winning scratchcard creates a copy of the next 'X' scratchcards where 'X' is the number of winning numbers a card has.
+* **Solution:** Create a dictionary containing all cards once. If card 'Y' wins 'X' times, add 'Y' copies to the next 'X' dict entries (Can also be done with a list).
+* **Thoughts:** I made no mistakes on this question and the code looks quite minimal and readable. Nice little challenge.
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 5: 
 * **Question:** 
