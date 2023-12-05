@@ -34,10 +34,10 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Create a dictionary containing all cards once. If card 'Y' wins 'X' times, add 'Y' copies to the next 'X' dict entries (Can also be done with a list).
 * **Thoughts:** I made no mistakes on this question and the code looks quite minimal and readable. Nice little challenge.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 5: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 5: If You Give A Seed A Fertilizer 
+* **Question:** Given a series of mappings and initial ranges, after sequentially mapping the ranges through the series, what is the lowest resulting value?
+* **Solution:** Go backwards through the mappings with the lowest possible final values one at a time and check if the final number in within the initial range.
+* **Thoughts:** I think we are out of the very easy questions. This was the first question where naïve algorithms could not work due to runtime issues. Fortunately, the second-slowest option was still reasonable to implement and had a runtime around 4 minutes.
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 6: 
 * **Question:** 
