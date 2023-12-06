@@ -39,10 +39,10 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Go backwards through the mappings with the lowest possible final values one at a time and check if the final number in within the initial range.
 * **Thoughts:** I think we are out of the very easy questions. This was the first question where naïve algorithms could not work due to runtime issues. Fortunately, the second-slowest option was still reasonable to implement and had a runtime around 4 minutes.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 6: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 6: Wait For It 
+* **Question:** Calculate how many options there are to win a race.
+* **Solution:** Loop until you find the first race winning value; Then loop for the back until you find the last race winning value; Calculate the difference, which will be the amount of winning options. 
+* **Thoughts:** Surprisingly easy, the wording alluded to it being more difficult.
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 7: 
 * **Question:** 
