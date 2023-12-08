@@ -40,7 +40,7 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Thoughts:** I think we are out of the very easy questions. This was the first question where naïve algorithms could not work due to runtime issues. Fortunately, the second-slowest option was still reasonable to implement and had a runtime around 4 minutes.
 
 ### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 6: Wait For It 
-* **Question:** Calculate how many options there are to win a race.
+* **Question:** Calculate how many options there are to hold a button to win a race.
 * **Solution:** Loop until you find the first race winning value; Then loop for the back until you find the last race winning value; Calculate the difference, which will be the amount of winning options. 
 * **Thoughts:** Surprisingly easy, the wording alluded to it being more difficult.
 
@@ -49,10 +49,10 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Using insertion sort, compare hands until the to-be-inserted hand is the weakest in the comparison and insert fittingly. Use count and some logic to determine the strength of a hand.
 * **Thoughts:** The tricky part was to determine the strength of a hand. It was a nice logic puzzle involving jokers and I missed a case in my code where 4 jokers (and an additional card) would often classify as a four of a kind instead of a five of a kind. Once this missed case was detected it was easy to add an explicit case for it.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 8: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 8: Haunted Wasteland 
+* **Question:** Follow instructions to leave a maze multiple times simultaneously. Find at which point in time all simultaneous paths are on an exit node.
+* **Solution:** Compute for all paths the distance time it takes to find an exit node, use the lcm to calculate a point where they all overlap.
+* **Thoughts:** It took me a while to figure out how to find the cycles in the paths to calculate the lcm. Fortunately, the puzzle input was nice so after a bit of checking the first time a node finds the exit it will repeat in that order.
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 9: 
 * **Question:** 
