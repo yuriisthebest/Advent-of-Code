@@ -54,10 +54,9 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Compute for all paths the distance time it takes to find an exit node, use the lcm to calculate a point where they all overlap.
 * **Thoughts:** It took me a while to figure out how to find the cycles in the paths to calculate the lcm. Fortunately, the puzzle input was nice so after a bit of checking the first time a node finds the exit it will repeat in that order.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 9: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 9: Mirage Maintenance 
+* **Question:** Predict the next value in a sequence by recursively computing the differences between values in the sequence.
+* **Solution:** Logic and loops.
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 10: 
 * **Question:** 
