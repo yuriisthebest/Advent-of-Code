@@ -58,10 +58,10 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Question:** Predict the next value in a sequence by recursively computing the differences between values in the sequence.
 * **Solution:** Logic and loops.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 10: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 10: Pipe Maze 
+* **Question:** Find the number of tiles that are enclosed by a loop of pipes.
+* **Solution:** Find the loop first, then follow the loop while keeping track which non-loop values are to the left and the right of the loop. This is done by determining the direction the loop goes and using logic to figure out which neighbor is on which side; Since the loop goes along the edges of the input (assumption), the side that is on the outside will have negative values from neighbors that are on the edge (also the inside will likely contain less tiles); Use bfs on the found inside tiles to find tiles that are enclosed but not next to the loop.
+* **Thoughts:** It was difficult to figure out a solution that wouldn't consider tiles that are within the loop but not enclosed. I was also dreading a bit that I would need direction logic which I find somewhat clunky and tried finding a smart solution. Eventually I made the direction logic, which worked fine.
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 11: 
 * **Question:** 
