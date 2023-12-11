@@ -37,7 +37,7 @@ A list of the tasks of this year with explanations, difficulty judgements,
 ### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 5: If You Give A Seed A Fertilizer 
 * **Question:** Given a series of mappings and initial ranges, after sequentially mapping the ranges through the series, what is the lowest resulting value?
 * **Solution:** Go backwards through the mappings with the lowest possible final values one at a time and check if the final number in within the initial range.
-* **Thoughts:** I think we are out of the very easy questions. This was the first question where naïve algorithms could not work due to runtime issues. Fortunately, the second-slowest option was still reasonable to implement and had a runtime around 4 minutes.
+* **Thoughts:** I think we are out of the very easy questions. This was the first question where naive algorithms could not work due to runtime issues. Fortunately, the second-slowest option was still reasonable to implement and had a runtime around 4 minutes.
 
 ### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 6: Wait For It 
 * **Question:** Calculate how many options there are to hold a button to win a race.
@@ -58,15 +58,15 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Question:** Predict the next value in a sequence by recursively computing the differences between values in the sequence.
 * **Solution:** Logic and loops.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 10: Pipe Maze 
+### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 10: Pipe Maze 
 * **Question:** Find the number of tiles that are enclosed by a loop of pipes.
-* **Solution:** Find the loop first, then follow the loop while keeping track which non-loop values are to the left and the right of the loop. This is done by determining the direction the loop goes and using logic to figure out which neighbor is on which side; Since the loop goes along the edges of the input (assumption), the side that is on the outside will have negative values from neighbors that are on the edge (also the inside will likely contain less tiles); Use bfs on the found inside tiles to find tiles that are enclosed but not next to the loop.
+* **Solution:** Find the loop first, then follow the loop while keeping track which non-loop values are to the left and the right of the loop. This is done by determining the direction the loop goes and using logic to figure out which neighbor is on which side; Since the loop goes along the edges of the input (assumption), the side that is on the outside will have negative values from neighbors that are on the edge (also the inside will likely contain fewer tiles); Use bfs on the found inside tiles to find tiles that are enclosed but not next to the loop.
 * **Thoughts:** It was difficult to figure out a solution that wouldn't consider tiles that are within the loop but not enclosed. I was also dreading a bit that I would need direction logic which I find somewhat clunky and tried finding a smart solution. Eventually I made the direction logic, which worked fine.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 11: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 11: Cosmic Expansion 
+* **Question:** Calculate the distances between every pair of galaxies in an expanding universe.
+* **Solution:** Use manhattan distance on every galaxy pair, keep track of which rows and column expand in the universe and add the expansion factor to the distance per expanding row/column that the shortest path passes.
+* **Thoughts:** The concept of the question is fun but overall not too difficult. The twist was expected, which means that I got the second star within a minute (59 seconds).
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 12: 
 * **Question:** 
