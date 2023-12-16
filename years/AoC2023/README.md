@@ -78,20 +78,19 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** 
 * **Thoughts:** 
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 14: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 14: Parabolic Reflector Dish 
+* **Question:** Calculate the load stress of a platform after 1000000000 cycles of rocks moving around.
+* **Solution:** Simulate the rocks until a cycle if found. Calculate the period of the cycle (manually) and use it to predict the state of the platform after the required cycles.
+* **Thoughts:** If was difficult to figure what to do and how to start to solve each part; But once a solution started forming, it was quite doable. I don't know if this comes from experience with AoC or that I happened to gain some insight in the puzzle.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 15: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 15: Lens Library 
+* **Question:** Hash a code to determine the box and lens type to be inserted.
+* **Solution:** Just implement the hash algorithm as stated and maintain the order of the lenses in the boxes with their focusing power.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 16: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 16: The Floor Will Be Lava 
+* **Question:** Find the best initial starting point to bounce a beam of light through mirrors and splitters to turn the mountain in lava.
+* **Solution:** A BFS / DFS approach; Maintain a queue of tiles with directions that still have to be processed and remember which tiles have been processed from which direction. Apply the bounce logic and run the simulation until all beams have been processed. Brute-force type method works in 400 sec.
+* **Thoughts:** After a busy week I was a bit out of touch with AoC. This day allowed me to ease into it again and hopefully continue a bit further. My solution is a bit slow, but speed is never a limiting factor!
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 17: 
 * **Question:** 
