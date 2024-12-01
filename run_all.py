@@ -5,13 +5,15 @@ from utils.colors import TextColors as Tc
 from years.AoC2021.tasks import TASKS2021
 from years.AoC2022.tasks import TASKS2022
 from years.AoC2023.tasks import TASKS2023
+from years.AoC2024.tasks import TASKS2024
 
 # Constants
 PARALLEL_COMPUTATION = False
 TASKS = {
     # 2021: TASKS2021,
     # 2022: TASKS2022,
-    2023: TASKS2023,
+    # 2023: TASKS2023,
+    2024: TASKS2024
 }
 
 
