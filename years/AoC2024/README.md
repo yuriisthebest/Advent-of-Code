@@ -23,20 +23,20 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Loop over the numbers until a bad level is encountered. Remove either the left or right level (one of which is bad) and check again if the report is safe (without removing any more levels).
 * **Thoughts:** More difficult than I expected at day 2 early in the morning, got stuck a little on trying to ignore numbers instead of removing and checking again.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 3: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 3: Mull It Over 
+* **Question:** Find multiplication statements in a random string of characters.
+* **Solution:** Use regex!
+* **Thoughts:** Always fun to use regex :D
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 4: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 4: Ceres Search 
+* **Question:** Find the word XMAS and X's of the word MAS in a wordseeker
+* **Solution:** Check every location of the wordseeker if it has an A (or X in part 1). Then try to map all possible associated patterns (XMAS or MAS - MAS) on that location.
+* **Thoughts:** It was kind a brute-forcy but a neat challenge.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 5: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 5: Print Queue 
+* **Question:** Fix the order of given lists of numbers according to given order rulesets
+* **Solution:** Keep a dict with all numbers that must be in-front or behind a number to easily check if a number is in order. Then iteratively add numbers to the front of the list if they are allowed in order.
+* **Thoughts:** Not having any big edge-cases is nice and ensures a non-frustrating solve
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 6: 
 * **Question:** 
