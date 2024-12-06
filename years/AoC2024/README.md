@@ -38,10 +38,10 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Keep a dict with all numbers that must be in-front or behind a number to easily check if a number is in order. Then iteratively add numbers to the front of the list if they are allowed in order.
 * **Thoughts:** Not having any big edge-cases is nice and ensures a non-frustrating solve
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 6: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 6: Guard Gallivant 
+* **Question:** Figure out where to place an obstruction to make the guard walk in loops
+* **Solution:** Place an obstruction at every point in the path and check if it creates a loop
+* **Thoughts:** I have a very slow solution, but the question was great
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 7: 
 * **Question:** 
