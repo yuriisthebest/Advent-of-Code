@@ -13,40 +13,40 @@ A list of the tasks of this year with explanations, difficulty judgements,
 - ![](https://via.placeholder.com/15/000000/000000?text=+) Very Hard
 
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 1: Historian Hysteria
+### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 1: Historian Hysteria
 * **Question:** Use one list to search for counts of numbers in another list
 * **Solution:** Loop over list 1, count occurrences in list 2; naïve method
 * **Thoughts:** Okay start, not too difficult, not too too easy. Theming seems lower this year, will see in the coming weeks
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 2: Red-Nosed Reports
+### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 2: Red-Nosed Reports
 * **Question:** Check if a report is safe, ignoring one bad number in the sequence
 * **Solution:** Loop over the numbers until a bad level is encountered. Remove either the left or right level (one of which is bad) and check again if the report is safe (without removing any more levels).
 * **Thoughts:** More difficult than I expected at day 2 early in the morning, got stuck a little on trying to ignore numbers instead of removing and checking again.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 3: Mull It Over 
+### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 3: Mull It Over 
 * **Question:** Find multiplication statements in a random string of characters.
 * **Solution:** Use regex!
 * **Thoughts:** Always fun to use regex :D
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 4: Ceres Search 
+### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 4: Ceres Search 
 * **Question:** Find the word XMAS and X's of the word MAS in a wordseeker
 * **Solution:** Check every location of the wordseeker if it has an A (or X in part 1). Then try to map all possible associated patterns (XMAS or MAS - MAS) on that location.
 * **Thoughts:** It was kind a brute-forcy but a neat challenge.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 5: Print Queue 
+### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 5: Print Queue 
 * **Question:** Fix the order of given lists of numbers according to given order rulesets
 * **Solution:** Keep a dict with all numbers that must be in-front or behind a number to easily check if a number is in order. Then iteratively add numbers to the front of the list if they are allowed in order.
 * **Thoughts:** Not having any big edge-cases is nice and ensures a non-frustrating solve
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 6: Guard Gallivant 
+### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 6: Guard Gallivant 
 * **Question:** Figure out where to place an obstruction to make the guard walk in loops
 * **Solution:** Place an obstruction at every point in the path and check if it creates a loop
 * **Thoughts:** I have a very slow solution, but the question was great
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 7: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 7: Bridge Repair 
+* **Question:** Figure out if a total can be made using given values and some operators
+* **Solution:** Recursively compute the total of the values with different operators until the total is found or all options have been checked
+* **Thoughts:** It seemed way more complex that it was, since a recursive brute-force method worked splendidly
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 8: 
 * **Question:** 
