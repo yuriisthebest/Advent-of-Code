@@ -1,17 +1,20 @@
 import time
+from profilehooks import profile
 from multiprocessing import Process
 from utils.load import load_answers
 from utils.colors import TextColors as Tc
 from years.AoC2021.tasks import TASKS2021
 from years.AoC2022.tasks import TASKS2022
 from years.AoC2023.tasks import TASKS2023
+from years.AoC2024.tasks import TASKS2024
 
 # Constants
 PARALLEL_COMPUTATION = False
 TASKS = {
     # 2021: TASKS2021,
     # 2022: TASKS2022,
-    2023: TASKS2023,
+    # 2023: TASKS2023,
+    2024: TASKS2024
 }
 
 
@@ -37,7 +40,8 @@ def asses_task(task: type, answers: dict, year: int) -> None:
         f"({year}, {task.__name__}) Part 2 has failed on the real data. Expected: {true[3]}, got: {pred[1][1]}"
 
 
-if __name__ == "__main__":
+@profile(stdout=False, filename="CodePerformance.prof")
+def run_all_tasks():
     start = time.perf_counter()
     num_tests = 0
     processes = []
@@ -54,9 +58,12 @@ if __name__ == "__main__":
                 processes.append(p)
             else:
                 asses_task(current_task, year_answers, year_num)
-
     # Wait for processes to stop and report success
     for process in processes:
         process.join()
     end = time.perf_counter()
     print(f"\n{Tc.OKGREEN}*** {num_tests} tests completed successfully in {end - start:.2f} sec***{Tc.ENDC}")
+
+
+if __name__ == "__main__":
+    run_all_tasks()

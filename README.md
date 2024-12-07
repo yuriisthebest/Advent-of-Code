@@ -1,6 +1,6 @@
 <!-- Main README -->
 
-![Collected starts](https://img.shields.io/static/v1?style=flat&logo=apachespark&label=stars&message=96&color=yellow&logoColor=yellow)
+![Collected starts](https://img.shields.io/static/v1?style=flat&logo=apachespark&label=stars&message=128&color=yellow&logoColor=yellow)
 ![GitHub last commit](https://img.shields.io/github/last-commit/yuriisthebest/Advent-of-Code?logo=GitHub)
 ![GitHub](https://img.shields.io/github/license/yuriisthebest/Advent-of-Code?logo=GitHub)
 
@@ -17,8 +17,9 @@ The puzzles are often very large and/or complex,
 
 - [**2020**](years/AoC2020) ![Collected starts](https://img.shields.io/static/v1?style=flat-square&logo=apachespark&label=stars&message=2/50&color=important&logoColor=yellow)
 - [**2021**](years/AoC2021) ![Collected starts](https://img.shields.io/static/v1?style=flat-square&logo=apachespark&label=stars&message=50/50&color=success&logoColor=yellow)
-- [**2022**](years/AoC2022) ![Collected starts](https://img.shields.io/static/v1?style=flat-square&logo=apachespark&label=stars&message=44/50&color=important&logoColor=yellow)
-- [**2023**](years/AoC2023) ![Collected starts](https://img.shields.io/static/v1?style=flat-square&logo=apachespark&label=stars&message=6/50&color=important&logoColor=yellow)
+- [**2022**](years/AoC2022) ![Collected starts](https://img.shields.io/static/v1?style=flat-square&logo=apachespark&label=stars&message=44/50&color=yellow&logoColor=yellow)
+- [**2023**](years/AoC2023) ![Collected starts](https://img.shields.io/static/v1?style=flat-square&logo=apachespark&label=stars&message=30/50&color=important&logoColor=yellow)
+- [**2024**](years/AoC2024) ![Collected starts](https://img.shields.io/static/v1?style=flat-square&logo=apachespark&label=stars&message=2/50&color=important&logoColor=yellow)
 
 # Features & Templates
 
@@ -27,4 +28,3 @@ This repository contains quality of life improvements, templates and frameworks 
 * **Run all:** Every task can be run from a single file, automatically checking all the answers with the correct ones.
 * **Framework:** The task framework automates most task loading and enables all tasks to be collected and run together.
  The [task template](templates/task_template.py) is copied as a starting point for each day.
-
