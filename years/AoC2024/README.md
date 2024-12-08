@@ -48,10 +48,10 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Recursively compute the total of the values with different operators until the total is found or all options have been checked
 * **Thoughts:** It seemed way more complex that it was, since a recursive brute-force method worked splendidly
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 8: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 8: Resonant Collinearity 
+* **Question:** Find all grid positions that are in line with a set of given beacons
+* **Solution:** Calculate all the antinode positions inside the frame based on the numeric location of the antennas pairs
+* **Thoughts:** This seemed a lot like the code I wrote for work
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 9: 
 * **Question:** 
