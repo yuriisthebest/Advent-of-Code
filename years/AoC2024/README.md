@@ -53,10 +53,10 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Calculate all the antinode positions inside the frame based on the numeric location of the antennas pairs
 * **Thoughts:** This seemed a lot like the code I wrote for work
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 9: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 9: Disk Fragmenter 
+* **Question:** Defragment a file system given a disk map that describes the file system
+* **Solution:** Keep an ordered list with the id, size and gap behind the file. Go from the files in the back to the front while checking the gaps from front to back to check if there is space for the file to move. If a space is found, move the file in the ordered list and adjust the gaps of the file, the previous file in front and the new file in front, to maintain the correct gaps.
+* **Thoughts:** I forgot to do this day and wanted an easy one before bed... it wasn't that easy and took quite some time
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 10: 
 * **Question:** 
