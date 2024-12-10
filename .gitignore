@@ -1,6 +1,7 @@
 # Personal ignores
 test.py
 test.ipynb
+*.prof
 
 # Pycharm gitignore
 .idea/

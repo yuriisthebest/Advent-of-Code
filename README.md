@@ -1,10 +1,10 @@
 <!-- Main README -->
 
-![Collected starts](https://img.shields.io/static/v1?style=flat&logo=apachespark&label=stars&message=128&color=yellow&logoColor=yellow)
+![Collected starts](https://img.shields.io/static/v1?style=flat&logo=apachespark&label=stars&message=146&color=yellow&logoColor=yellow)
 ![GitHub last commit](https://img.shields.io/github/last-commit/yuriisthebest/Advent-of-Code?logo=GitHub)
 ![GitHub](https://img.shields.io/github/license/yuriisthebest/Advent-of-Code?logo=GitHub)
 
-![Advent of Code](advent_of_code.jpg)
+![Advent of Code](utils/advent_of_code.jpg)
 
 [Advent of Code](https://adventofcode.com/) is an annual advent calendar of small programming puzzles for a variety of skill sets and skill levels.
 A new exercise is released every day from the 1<sup>st</sup> to the 25<sup>th</sup> of December.
@@ -19,7 +19,7 @@ The puzzles are often very large and/or complex,
 - [**2021**](years/AoC2021) ![Collected starts](https://img.shields.io/static/v1?style=flat-square&logo=apachespark&label=stars&message=50/50&color=success&logoColor=yellow)
 - [**2022**](years/AoC2022) ![Collected starts](https://img.shields.io/static/v1?style=flat-square&logo=apachespark&label=stars&message=44/50&color=yellow&logoColor=yellow)
 - [**2023**](years/AoC2023) ![Collected starts](https://img.shields.io/static/v1?style=flat-square&logo=apachespark&label=stars&message=30/50&color=important&logoColor=yellow)
-- [**2024**](years/AoC2024) ![Collected starts](https://img.shields.io/static/v1?style=flat-square&logo=apachespark&label=stars&message=2/50&color=important&logoColor=yellow)
+- [**2024**](years/AoC2024) ![Collected starts](https://img.shields.io/static/v1?style=flat-square&logo=apachespark&label=stars&message=20/50&color=important&logoColor=yellow)
 
 # Features & Templates
 

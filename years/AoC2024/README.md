@@ -1,5 +1,5 @@
 # Advent of Code 2024
-![Collected starts](https://img.shields.io/static/v1?style=for-the-badge&logo=apachespark&label=stars&message=2/50&color=success&logoColor=yellow)
+![Collected starts](https://img.shields.io/static/v1?style=for-the-badge&logo=apachespark&label=stars&message=20/50&color=success&logoColor=yellow)
 
 ## Tasks
 A list of the tasks of this year with explanations, difficulty judgements,
@@ -15,8 +15,8 @@ A list of the tasks of this year with explanations, difficulty judgements,
 
 ### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 1: Historian Hysteria
 * **Question:** Use one list to search for counts of numbers in another list
-* **Solution:** Loop over list 1, count occurrences in list 2; naïve method
-* **Thoughts:** Okay start, not too difficult, not too too easy. Theming seems lower this year, will see in the coming weeks
+* **Solution:** Loop over list 1, count occurrences in list 2; naive method
+* **Thoughts:** Okay start, not too difficult, not too easy. Theming seems lower this year, will see in the coming weeks
 
 ### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 2: Red-Nosed Reports
 * **Question:** Check if a report is safe, ignoring one bad number in the sequence
@@ -29,12 +29,12 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Thoughts:** Always fun to use regex :D
 
 ### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 4: Ceres Search 
-* **Question:** Find the word XMAS and X's of the word MAS in a wordseeker
-* **Solution:** Check every location of the wordseeker if it has an A (or X in part 1). Then try to map all possible associated patterns (XMAS or MAS - MAS) on that location.
-* **Thoughts:** It was kind a brute-forcy but a neat challenge.
+* **Question:** Find the word XMAS and X's of the word MAS in a word seeker
+* **Solution:** Check every location of the word seeker if it has an A (or X in part 1). Then try to map all possible associated patterns (XMAS or MAS - MAS) on that location.
+* **Thoughts:** It was kind a brute-force but a neat challenge.
 
 ### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 5: Print Queue 
-* **Question:** Fix the order of given lists of numbers according to given order rulesets
+* **Question:** Fix the order of given lists of numbers according to given ordering rules
 * **Solution:** Keep a dict with all numbers that must be in-front or behind a number to easily check if a number is in order. Then iteratively add numbers to the front of the list if they are allowed in order.
 * **Thoughts:** Not having any big edge-cases is nice and ensures a non-frustrating solve
 
@@ -50,7 +50,7 @@ A list of the tasks of this year with explanations, difficulty judgements,
 
 ### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 8: Resonant Collinearity 
 * **Question:** Find all grid positions that are in line with a set of given beacons
-* **Solution:** Calculate all the antinode positions inside the frame based on the numeric location of the antennas pairs
+* **Solution:** Calculate all the anti-node positions inside the frame based on the numeric location of the antennas pairs
 * **Thoughts:** This seemed a lot like the code I wrote for work
 
 ### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 9: Disk Fragmenter 
@@ -58,10 +58,10 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Keep an ordered list with the id, size and gap behind the file. Go from the files in the back to the front while checking the gaps from front to back to check if there is space for the file to move. If a space is found, move the file in the ordered list and adjust the gaps of the file, the previous file in front and the new file in front, to maintain the correct gaps.
 * **Thoughts:** I forgot to do this day and wanted an easy one before bed... it wasn't that easy and took quite some time
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 10: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 10: Hoof It
+* **Question:** Find the distinct number of paths from a trailhead to possible tops
+* **Solution:** For each trailhead: Figure out which neighbors can be stepped to from current locations, repeat this 9 times until you get to a top. Count how often you have reached the top.
+* **Thoughts:** I really liked this challenge. Funny enough I think this is the first time my part two solution was equal to part 1 minus a single line of code (it's skipped when called by part 2).
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 11: 
 * **Question:** 
