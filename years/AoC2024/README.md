@@ -63,10 +63,10 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** For each trailhead: Figure out which neighbors can be stepped to from current locations, repeat this 9 times until you get to a top. Count how often you have reached the top.
 * **Thoughts:** I really liked this challenge. Funny enough I think this is the first time my part two solution was equal to part 1 minus a single line of code (it's skipped when called by part 2).
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 11: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 11: Plutonian Pebbles 
+* **Question:** Figure out how many multiplying pebbles there are after blinking a lot
+* **Solution:** Use recursion with memoization to efficiently calculate the amount of splits a number will do with the remain amount of blinks
+* **Thoughts:** Memoization!
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 12: 
 * **Question:** 
