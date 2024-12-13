@@ -68,15 +68,16 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Use recursion with memoization to efficiently calculate the amount of splits a number will do with the remain amount of blinks
 * **Thoughts:** Memoization!
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 12: 
+### ![](https://via.placeholder.com/15/ff0000/000000?text=+) Day 12: 
 * **Question:** 
 * **Solution:** 
 * **Thoughts:** 
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 13: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 13: Claw Contraption 
+* **Question:** Find x and y such that A*x + B*y = Target (very large number) for two dimensions if x and y exist
+* **Solution:** Download a integer linear optimization package (ortools) and rewrite the problem as integer optimization
+* **Thoughts:** I don't like adding packages to the advent of code, since I try to keep it pure python. However, transforming the problem to integer optimization is far more effective than solving it by code. There probably is a repetition trick cause by the values of button a and b (there often is such a trick), but I generally don't like to find them if there is an easier method. The problem itself is nice with a nice concept and somewhat hidden optimization problem.
+* **Alternative solution (worked only for part one):** Start with maximizing B based on target and setting A to 0. If the current value is above target, remove 1 B. If the value is below, add 1 A. Keep going until a solution is found or B is negative. This takes way too long for part 2, but I found it elegant
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 14: 
 * **Question:** 
