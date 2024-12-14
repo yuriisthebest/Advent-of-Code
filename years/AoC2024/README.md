@@ -66,7 +66,7 @@ A list of the tasks of this year with explanations, difficulty judgements,
 ### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 11: Plutonian Pebbles 
 * **Question:** Figure out how many multiplying pebbles there are after blinking a lot
 * **Solution:** Use recursion with memoization to efficiently calculate the amount of splits a number will do with the remain amount of blinks
-* **Thoughts:** Memoization!
+* **Thoughts:** Memoization! Use the fact that the same numbers occur many times in the row of pebbles
 
 ### ![](https://via.placeholder.com/15/ff0000/000000?text=+) Day 12: 
 * **Question:** 
@@ -79,10 +79,10 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Thoughts:** I don't like adding packages to the advent of code, since I try to keep it pure python. However, transforming the problem to integer optimization is far more effective than solving it by code. There probably is a repetition trick cause by the values of button a and b (there often is such a trick), but I generally don't like to find them if there is an easier method. The problem itself is nice with a nice concept and somewhat hidden optimization problem.
 * **Alternative solution (worked only for part one):** Start with maximizing B based on target and setting A to 0. If the current value is above target, remove 1 B. If the value is below, add 1 A. Keep going until a solution is found or B is negative. This takes way too long for part 2, but I found it elegant
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 14: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 14: Restroom Redoubt 
+* **Question:** Figure out after how many steps the linear walking bots create a figure of a Christmas tree.
+* **Solution:** Go step by step (from the back is faster) until there is a situation where 8 bots line up vertically, that is a good indication of when an image is created.
+* **Thoughts:** I did not expect that part 2, I (thought that I) optimized part 1 for an extension of the map or for many iterations. I did further improve finding the end locations of the bats for any given steps, and now it runs fairly fast.
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 15: 
 * **Question:** 
