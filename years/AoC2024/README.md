@@ -68,10 +68,10 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Use recursion with memoization to efficiently calculate the amount of splits a number will do with the remain amount of blinks
 * **Thoughts:** Memoization! Use the fact that the same numbers occur many times in the row of pebbles
 
-### ![](https://via.placeholder.com/15/ff0000/000000?text=+) Day 12: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff0000/000000?text=+) Day 12: Garden Groups
+* **Question:** Find regions of letters in a grid and find the amount of sides these shapes have
+* **Solution:** First find the areas and all their neighbors (counting duplicates). Then merge neighbors together iff they are next to each other, and they originate from the same relative direction to their area origin.
+* **Thoughts:** This question was hard for me, but my cognitive state was somewhat impacted by a large Christmas party and the fact that it was late at night. Solving part 2 of this problem two days later was much easier and took little effort (continuing the work from my attempts on the 12th).
 
 ### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 13: Claw Contraption 
 * **Question:** Find x and y such that A*x + B*y = Target (very large number) for two dimensions if x and y exist
