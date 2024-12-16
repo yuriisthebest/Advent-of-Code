@@ -84,15 +84,15 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Go step by step (from the back is faster) until there is a situation where 8 bots line up vertically, that is a good indication of when an image is created.
 * **Thoughts:** I did not expect that part 2, I (thought that I) optimized part 1 for an extension of the map or for many iterations. I did further improve finding the end locations of the bats for any given steps, and now it runs fairly fast.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 15: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 15: Warehouse Woes 
+* **Question:** A randomly moving robot is moving boxes by running into them, where do the boxes end up?
+* **Solution:** A recursive mess of if-statements and data modifications.
+* **Thoughts:** LANTERNFISH are Back! It was a fun problem that looked a lot like day 6. Took not that long to solve.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 16: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 16: Reindeer Maze 
+* **Question:** Find the optimals paths through a maze
+* **Solution:** Dijkstra's algorithm but don't stop when first solution is found
+* **Thoughts:** I expected harder questions by now. I did get stuck for a while on trying a double pathfinding solution to check if start -> tile -> end is as fast as start -> end. It was slow and somehow it didn't work. Modiying dijkstra was also faster and easier in the end.
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 17: 
 * **Question:** 
