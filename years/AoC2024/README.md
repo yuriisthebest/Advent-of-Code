@@ -94,15 +94,15 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Dijkstra's algorithm but don't stop when first solution is found
 * **Thoughts:** I expected harder questions by now. I did get stuck for a while on trying a double pathfinding solution to check if start -> tile -> end is as fast as start -> end. It was slow and somehow it didn't work. Modiying dijkstra was also faster and easier in the end.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 17: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff0000/000000?text=+) Day 17: Chronospatial Computer 
+* **Question:** Reverse engineer code instruction to figure out which input number to use
+* **Solution:** TDB
+* **Thoughts:** -NOT SOLVED YET- I like reverse engineering puzzles, but this is difficult
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 18: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 18: RAM Run 
+* **Question:** Find out when a path from the top-left to the bottom-right is blocked
+* **Solution:** Bruteforce: I searched for a path from start to end for each new byte that had fallen
+* **Thoughts:** This was very easy for day 18. Granted I did bruteforce the solution, but with numbers this low it wouldn't make sense to do it more efficiently. A more elegant solution would be to see when a line is formed that spans the entire memory bank, but I'm not sure how much faster of a solution that would be
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 19: 
 * **Question:** 
