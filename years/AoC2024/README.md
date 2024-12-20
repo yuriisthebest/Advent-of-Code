@@ -104,15 +104,15 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Bruteforce: I searched for a path from start to end for each new byte that had fallen
 * **Thoughts:** This was very easy for day 18. Granted I did bruteforce the solution, but with numbers this low it wouldn't make sense to do it more efficiently. A more elegant solution would be to see when a line is formed that spans the entire memory bank, but I'm not sure how much faster of a solution that would be
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 19: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 19: Linen Layout 
+* **Question:** Figure out in how many ways a design can be made. <- that explanation makes no sense. Ever tried to create words / sentences from the abreviations on the periodic table? That's this day's challenge.
+* **Solution:** Recurse from the start of the pattern to see which patterns it matches, remove that start and continue recursing.
+* **Thoughts:** I love memoization with recursion.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 20: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 20: Race Condition 
+* **Question:** Given a path through a maze, how many paths could you cheat through the maze.
+* **Solution:** Find the path through the maze. Check for each step to which positions further along it could cheat, count how often that occurs
+* **Thoughts:** Wow, I was thinking way too complex, difficult and time-consuming by using a pathfinder to find all possible cheat paths. However, the key is that you can easily find the path that will be taken, which is static besides the cheating. This would be an easy day if it didn't take me ~2 hours to figure this out.
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 21: 
 * **Question:** 
