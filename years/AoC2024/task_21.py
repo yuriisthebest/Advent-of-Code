@@ -1,4 +1,3 @@
-from functools import cache
 from utils.decorators import timer, debug
 from utils.task import Task
 
@@ -14,10 +13,10 @@ class Task21(Task):
         complexity = 0
         for code in data:
             number = int(code[:-1])
-            code = self.give_orders([code])
+            code = self.give_orders({code: 1})
             code = self.give_orders(code)
             code = self.give_orders(code)
-            length = sum([len(chain) for chain in code])
+            length = sum([len(chain) * code[chain] for chain in code])
             complexity += number * length
         return complexity
 
@@ -27,12 +26,10 @@ class Task21(Task):
         complexity = 0
         for code in data:
             number = int(code[:-1])
-            code = [code]
+            code = {code: 1}
             for i in range(26):
-                print(i, len(code))
                 code = self.give_orders(code)
-            # print(len(code), code)
-            length = sum([len(chain) for chain in code])
+            length = sum([len(chain) * code[chain] for chain in code])
             complexity += number * length
         return complexity
 
@@ -53,7 +50,6 @@ class Task21(Task):
                 case ">":
                     return -2, 2
 
-    @cache
     def steps_numeric(self, start: chr, end: chr):
         start_coord = self.get_coord(start)
         end_coord = self.get_coord(end)
@@ -70,7 +66,6 @@ class Task21(Task):
             path = path[::-1]
         return path
 
-    @cache
     def do_chain(self, chain: str) -> list:
         orders = []
         current_node = "A"
@@ -85,11 +80,14 @@ class Task21(Task):
             orders.append(path)
         return orders
 
-    def give_orders(self, code: list) -> list:
-        orders = []
+    def give_orders(self, code: dict) -> dict:
+        orders = {}
         for chain in code:
             chains = self.do_chain(chain)
-            orders.extend(chains)
+            for path in chains:
+                if path not in orders:
+                    orders[path] = 0
+                orders[path] += code[chain]
         return orders
 
 

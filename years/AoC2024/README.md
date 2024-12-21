@@ -114,10 +114,10 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Find the path through the maze. Check for each step to which positions further along it could cheat, count how often that occurs
 * **Thoughts:** Wow, I was thinking way too complex, difficult and time-consuming by using a pathfinder to find all possible cheat paths. However, the key is that you can easily find the path that will be taken, which is static besides the cheating. This would be an easy day if it didn't take me ~2 hours to figure this out.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 21: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff0000/000000?text=+) Day 21: Keypad Conundrum 
+* **Question:** Dictate the movements of a chain of robots. Recursively describe a string by writing it on a numpad.
+* **Solution:** Key insight, if you look at a chunk of movements of the next bot, it doesn't matter where the bots further down the line are with their arm. You can take each segment (start and stop on "A") as individual chunks that have to be described, order does not matter. Therefor, keep track of which segments have been seen how many times which needs to be described by another bot in the line.
+* **Thoughts:** Beautiful! The amount of code and the runtime of the code are both really low, but it took a long time to find all the insights in the problem and how to use that to solve it, escpecially the insight above took a while, as did the order in which the keys should be pressed to find the optimal path (for part 1). Also, I lost sight of the exact metrics required for my difficulty rating system.
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 22: 
 * **Question:** 
