@@ -37,7 +37,7 @@ def debug_shape(func):
     """Print the length of the function signature and the return value"""
     @functools.wraps(func)
     def wrapper_debug(*args, **kwargs):
-        args_repr = [repr(a) if not hasattr(a, '__len__') else str(np.shape(a)) for a in args]
+        args_repr = [repr(a) if not hasattr(a, '__len__') else str(np.array(a, dtype=object).shape) for a in args]
         kwargs_repr = [f"{k}={v!r}" for k, v in kwargs.items()]
         signature = ", ".join(args_repr + kwargs_repr)
         print(f"{Tc.HEADER}Calling {func.__name__}({Tc.ENDC}{signature}{Tc.HEADER}){Tc.ENDC}")

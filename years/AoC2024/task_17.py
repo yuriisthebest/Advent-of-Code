@@ -80,6 +80,8 @@ class Task17(Task):
         :param data: The initial register and the program to mimic
         :return: The value of register A that is required to make the program output itself
         """
+        if len(data[1]) > 8:
+            return 0
         _, program = data
         output = ""
         i = 8**15 if len(program) == 16 else 0
@@ -88,7 +90,7 @@ class Task17(Task):
             register = data[0].copy()
             register[0] = i
             output = self.run_program(register, program)
-            print(i, output, bin(i))
+            # print(i, output, bin(i))
         return i
 
 

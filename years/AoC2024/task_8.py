@@ -64,7 +64,6 @@ class Task8(Task):
             for i, j in locations:
                 if (i, j) not in total:
                     total.append((i, j))
-        print(total)
         return len(total)
 
     @staticmethod
