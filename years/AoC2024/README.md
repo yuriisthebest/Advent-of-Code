@@ -119,10 +119,10 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Key insight, if you look at a chunk of movements of the next bot, it doesn't matter where the bots further down the line are with their arm. You can take each segment (start and stop on "A") as individual chunks that have to be described, order does not matter. Therefor, keep track of which segments have been seen how many times which needs to be described by another bot in the line.
 * **Thoughts:** Beautiful! The amount of code and the runtime of the code are both really low, but it took a long time to find all the insights in the problem and how to use that to solve it, escpecially the insight above took a while, as did the order in which the keys should be pressed to find the optimal path (for part 1). Also, I lost sight of the exact metrics required for my difficulty rating system.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 22: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 22: Monkey Market 
+* **Question:** Efficiently compute a series of numbers and find a short sequence in the sequences that accumulate the most bananas
+* **Solution:** Remember the last four differences in the sequence. For each new number, update the sequence and remember this sequence and the amount of bananas it buys. Combine all sequences in one dict, such that each sequences contains all the bananas it buys across all venders. Check which of these sequences produce the most bananas and return that.
+* **Thoughts:** I love these recent problems that are quite simple, but requires a lot of considerations and insights in how it exactly works. After understanding it completely, writing code that efficiently finds the answer is surprisingly short.
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 23: 
 * **Question:** 
