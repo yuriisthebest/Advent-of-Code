@@ -124,15 +124,15 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Remember the last four differences in the sequence. For each new number, update the sequence and remember this sequence and the amount of bananas it buys. Combine all sequences in one dict, such that each sequences contains all the bananas it buys across all venders. Check which of these sequences produce the most bananas and return that.
 * **Thoughts:** I love these recent problems that are quite simple, but requires a lot of considerations and insights in how it exactly works. After understanding it completely, writing code that efficiently finds the answer is surprisingly short.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 23: 
+### ![](https://via.placeholder.com/15/ff0000/000000?text=+) Day 23: LAN Party 
 * **Question:** Find the max clique given a set of connections
-* **Solution:** 
-* **Thoughts:** 
+* **Solution:** Just keep building larger cliques until there is only one left, quite slow
+* **Thoughts:** TODO, improve runtime of solution from 13000 sec to <1
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 24: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff0000/000000?text=+) Day 24: Crossed Wires
+* **Question:** Figure out which logical wires are incorrect
+* **Solution:** I did it manually after visualizing the logic in Mermaid (online tip as tool). My notes and observation are stored in the code
+* **Thoughts:** Interesting puzzle that I have no idea how to code in any polynomial time
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 25: 
 * **Question:** 
