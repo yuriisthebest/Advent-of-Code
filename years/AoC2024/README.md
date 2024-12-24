@@ -125,7 +125,7 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Thoughts:** I love these recent problems that are quite simple, but requires a lot of considerations and insights in how it exactly works. After understanding it completely, writing code that efficiently finds the answer is surprisingly short.
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 23: 
-* **Question:** 
+* **Question:** Find the max clique given a set of connections
 * **Solution:** 
 * **Thoughts:** 
 
