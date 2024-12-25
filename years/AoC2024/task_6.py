@@ -1,4 +1,4 @@
-from utils.decorators import timer, debug
+from utils.decorators import timer, debug_shape
 from utils.task import Task
 
 ROTATIONS = {(-1, 0): (0, 1), (0, 1): (1, 0), (1, 0): (0, -1), (0, -1): (-1, 0)}
@@ -16,13 +16,18 @@ class Task6(Task):
                 if char in ["<", ">", "v", "^"]:
                     return i, j
 
-    @debug
+    @debug_shape
     @timer(YEAR, TASK_NUM)
     def part_1(self, data: list) -> int:
+        seen = self.run_guard(data)
+        seen = set([(i, j) for i, j, direction in seen])
+        return len(seen)
+
+    def run_guard(self, data):
         i, j = self.find_start(data)
         # Assume start position is "^"
         direction = (-1, 0)
-        seen = [(i, j)]
+        seen = [(i, j, direction)]
         while 0 <= i + direction[0] < len(data) and 0 <= j + direction[1] < len(data[0]):
             # Check if step is obstructed
             if data[i + direction[0]][j + direction[1]] == "#":
@@ -31,11 +36,11 @@ class Task6(Task):
             else:
                 i += direction[0]
                 j += direction[1]
-                if (i, j) not in seen:
-                    seen.append((i, j))
-        return len(seen)
+                if (i, j, direction) not in seen:
+                    seen.append((i, j, direction))
+        return seen
 
-    @debug
+    @debug_shape
     @timer(YEAR, TASK_NUM)
     def part_2(self, data: list) -> int:
         obstruction_locations = []
@@ -63,7 +68,7 @@ class Task6(Task):
                 # Take a step
                 i += direction[0]
                 j += direction[1]
-                if (i, j) not in seen:
+                if (i, j, direction) not in seen:
                     seen.append((i, j, direction))
         return len(obstruction_locations)
 

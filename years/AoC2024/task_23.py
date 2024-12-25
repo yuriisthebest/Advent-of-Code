@@ -37,10 +37,32 @@ class Task23(Task):
     @debug
     @timer(YEAR, TASK_NUM)
     def part_2(self, data: list) -> str:
-        comps = self.get_computers(data[0])
-        cliques = self.find_max_cliques(data[0], comps)[0]
-        # The answer is cf,ct,cv,cz,fi,lq,my,pa,sl,tt,vw,wz,yd
-        return ",".join(sorted(cliques))
+        if len(data[0]) > 50:
+            connections = data[0]
+            comps = self.get_computers(connections)
+            for comp in comps:
+                neighbors = self.node_neighbors(connections, comp)
+                for neighbor in neighbors:
+                    clique = neighbors.copy()
+                    clique.remove(neighbor)
+                    clique.append(comp)
+                    if len(clique) == 13 and self.is_clique(connections, clique):
+                        return ",".join(sorted(clique))
+        else:
+            connections = data[0]
+            comps = self.get_computers(connections)
+            cliques = self.find_max_cliques(connections, comps)[0]
+            return ",".join(sorted(cliques))
+
+    @staticmethod
+    def node_neighbors(connections: list, node: str):
+        neighbors = []
+        for connect in connections:
+            if connect[0] == node:
+                neighbors.append(connect[1])
+            if connect[1] == node:
+                neighbors.append(connect[0])
+        return neighbors
 
     def find_max_cliques(self, connections: list, nodes: list) -> list:
         possible_cliques = [[node] for node in nodes.copy()]
@@ -59,7 +81,6 @@ class Task23(Task):
                 return possible_cliques
             i += 1
             possible_cliques = new_possible_cliques
-            print(i, len(new_possible_cliques))
 
     @staticmethod
     def is_clique(connections: list, computers: list) -> bool:
