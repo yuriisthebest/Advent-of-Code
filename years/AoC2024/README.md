@@ -1,5 +1,5 @@
 # Advent of Code 2024
-![Collected starts](https://img.shields.io/static/v1?style=for-the-badge&logo=apachespark&label=stars&message=48/50&color=success&logoColor=yellow)
+![Collected starts](https://img.shields.io/static/v1?style=for-the-badge&logo=apachespark&label=stars&message=50/50&color=success&logoColor=yellow)
 
 ## Tasks
 A list of the tasks of this year with explanations, difficulty judgements,
@@ -96,8 +96,8 @@ A list of the tasks of this year with explanations, difficulty judgements,
 
 ### ![](https://via.placeholder.com/15/ff0000/000000?text=+) Day 17: Chronospatial Computer 
 * **Question:** Reverse engineer code instruction to figure out which input number to use
-* **Solution:** TDB
-* **Thoughts:** -NOT SOLVED YET- I like reverse engineering puzzles, but this is difficult
+* **Solution:** Increase the A register on bit (or 3 bits) at a time to find which input recreates the program
+* **Thoughts:** I enjoy looking at reverse engineering puzzles, but this is difficult to solve. Longest solve of 2024, finished this task last on 25 dec.
 
 ### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 18: RAM Run 
 * **Question:** Find out when a path from the top-left to the bottom-right is blocked

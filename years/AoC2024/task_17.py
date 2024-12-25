@@ -76,22 +76,29 @@ class Task17(Task):
         6(0, 3) -> A = A/3	    -> A is reduced
         7(5, 5) -> output B % 8	-> print B
         8(3, 0) -> if A != 0, goto start, else just stop
-
-        :param data: The initial register and the program to mimic
-        :return: The value of register A that is required to make the program output itself
         """
-        if len(data[1]) > 8:
-            return 0
         _, program = data
-        output = ""
-        i = 8**15 if len(program) == 16 else 0
-        while output != program:
-            i += 1
-            register = data[0].copy()
-            register[0] = i
-            output = self.run_program(register, program)
-            # print(i, output, bin(i))
-        return i
+        result = self.find_next_digit(program, "")
+        return int(result, 8)
+
+    def find_next_digit(self, program: list, octo: oct) -> str | bool:
+        for i in range(8):
+            if octo == "" and i == 0:
+                continue
+            new_octo = octo + str(i)
+            p_result = self.run_program([int(new_octo, 8), 0, 0], program)
+
+            # Stop the search if we have found the input that creates the program
+            if p_result == program:
+                return new_octo
+
+            # If this part of the program is recreated, try to increase the register to find the next
+            if p_result == program[-len(p_result):]:
+                next_digit = self.find_next_digit(program, new_octo)
+                # Only return if the digits after have returned, thus the answer is found
+                if next_digit is not False:
+                    return next_digit
+        return False
 
 
 if __name__ == "__main__":
