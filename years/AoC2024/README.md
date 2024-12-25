@@ -1,5 +1,5 @@
 # Advent of Code 2024
-![Collected starts](https://img.shields.io/static/v1?style=for-the-badge&logo=apachespark&label=stars&message=20/50&color=success&logoColor=yellow)
+![Collected starts](https://img.shields.io/static/v1?style=for-the-badge&logo=apachespark&label=stars&message=48/50&color=success&logoColor=yellow)
 
 ## Tasks
 A list of the tasks of this year with explanations, difficulty judgements,
@@ -134,7 +134,7 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** I did it manually after visualizing the logic in Mermaid (online tip as tool). My notes and observation are stored in the code
 * **Thoughts:** Interesting puzzle that I have no idea how to code in any polynomial time
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 25: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 25: Code Chronicle
+* **Question:** Find the key to the door of the chief historian
+* **Solution:** Just process the data and compare EVERYTHING
+* **Thoughts:** Have a nice Christmas, and good fortune for 2025!
