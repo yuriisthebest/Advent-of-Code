@@ -7,6 +7,7 @@ from years.AoC2021.tasks import TASKS2021
 from years.AoC2022.tasks import TASKS2022
 from years.AoC2023.tasks import TASKS2023
 from years.AoC2024.tasks import TASKS2024
+from years.AoC2025.tasks import TASKS2025
 
 # Constants
 PARALLEL_COMPUTATION = False
@@ -14,7 +15,8 @@ TASKS = {
     # 2021: TASKS2021,
     # 2022: TASKS2022,
     # 2023: TASKS2023,
-    2024: TASKS2024
+    # 2024: TASKS2024,
+    2025: TASKS2025
 }
 
 

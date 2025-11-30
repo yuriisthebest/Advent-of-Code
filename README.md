@@ -20,6 +20,7 @@ The puzzles are often very large and/or complex,
 - [**2022**](years/AoC2022) ![Collected starts](https://img.shields.io/static/v1?style=flat-square&logo=apachespark&label=stars&message=44/50&color=yellow&logoColor=yellow)
 - [**2023**](years/AoC2023) ![Collected starts](https://img.shields.io/static/v1?style=flat-square&logo=apachespark&label=stars&message=30/50&color=important&logoColor=yellow)
 - [**2024**](years/AoC2024) ![Collected starts](https://img.shields.io/static/v1?style=flat-square&logo=apachespark&label=stars&message=50/50&color=success&logoColor=yellow)
+- [**2025**](years/AoC2025) ![Collected starts](https://img.shields.io/static/v1?style=flat-square&logo=apachespark&label=stars&message=0/50&color=important&logoColor=yellow)
 
 # Features & Templates
 
