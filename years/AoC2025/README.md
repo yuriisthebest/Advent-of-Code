@@ -13,10 +13,10 @@ A list of the tasks of this year with explanations, difficulty judgements,
 - ![](https://via.placeholder.com/15/000000/000000?text=+) Very Hard
 
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 1: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 1: 
+* **Question:** Rotating a safe dial left and right, how often does it pass 0?
+* **Solution:** One big mess of modulo operations. The code works for values smaller than 100, so first modulo the rotation value since we are guaranteed to pass 0 with those, then rotate the dial only the tens and ones values.
+* **Thoughts:** A fairly easy puzzle, but I kept missing edge-cases causing my to lose some time
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 2: 
 * **Question:** 
