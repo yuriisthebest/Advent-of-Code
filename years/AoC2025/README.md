@@ -13,25 +13,25 @@ A list of the tasks of this year with explanations, difficulty judgements,
 - ![](https://via.placeholder.com/15/000000/000000?text=+) Very Hard
 
 
-### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 1: 
+### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 1: Secret Entrance
 * **Question:** Rotating a safe dial left and right, how often does it pass 0?
 * **Solution:** One big mess of modulo operations. The code works for values smaller than 100, so first modulo the rotation value since we are guaranteed to pass 0 with those, then rotate the dial only the tens and ones values.
 * **Thoughts:** A fairly easy puzzle, but I kept missing edge-cases causing my to lose some time.
 
-### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 2: 
+### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 2: Gift Shop
 * **Question:** Find numbers with repeating segments within large number ranges.
 * **Solution:** There aren't that many numbers, so iteratively check each number if they contain a set of repeating digits. First chunk the number into same size chunks, then check if the set of these chunks if unique.
 * **Thoughts:** Neat and nice puzzle. There were not really any tricks, it was brute-forceable, but a nice little challenge.
 
-### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 3: 
+### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 3: Lobby
 * **Question:** Given a list of numbers, created the largest number of set size N in order that can be made.
 * **Solution:** It is always best to use the largest number first, provided that there are enough digits following it to finish the number. Therefore, create a window with a pointer to the first list value as start and one N digits from the end. Find the largest value in that window, then set the start pointer to the value next to that largest value and increase the stop pointer by one. Do this N times and you'll find the largest possible number with N digits.
 * **Thoughts:** I enjoy puzzles like this where you need to think clearly about your approach. I quickly came to the realization above that greedily getting the largest possible number is always best so that was really nice.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 4: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 4: Printing Department
+* **Question:** Check amount of neighbors of cells in a grid that have a special value.
+* **Solution:** While loop that keeps track if a cell has changed this loop, then check each cell if it gets modified based on the values of the neighbors.
+* **Thoughts:** One of the easiest grid puzzles.
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 5: 
 * **Question:** 

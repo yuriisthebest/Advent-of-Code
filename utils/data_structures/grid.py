@@ -1,3 +1,4 @@
+import numpy as np
 from abc import abstractmethod
 from typing import List
 from itertools import product
@@ -65,13 +66,15 @@ class Grid:
         :param wrap_around: does the grid wrap around from right or left and bottom to top?
         """
         self.wrap_around = wrap_around
-        start_index, stop_index = 0, -1
-        if edge_included:
-            start_index, stop_index = 1, -2
         # Build a grid with cells from the relevant input data
-        self.grid = [[Cell(position=(i, j), value=char)
-                      for j, char in enumerate(line[start_index:stop_index])]
-                     for i, line in enumerate(data[start_index:stop_index])]
+        if edge_included:
+            self.grid = [[Cell(position=(i, j), value=char)
+                          for j, char in enumerate(line[1:-1])]
+                         for i, line in enumerate(data[1:-1])]
+        else:
+            self.grid = [[Cell(position=(i, j), value=char)
+                          for j, char in enumerate(line)]
+                         for i, line in enumerate(data)]
         self.max_dims = []
         # Determine the maximum length of each dimension
         dims = self.grid
@@ -91,6 +94,11 @@ class Grid:
         for dim_position in position:
             cell = cell[dim_position]
         return cell
+
+    def get_each_cells(self):
+        for line in self.grid:
+            for cell in line:
+                yield cell
 
     def find_values(self, tag: str = "value", values: list = None, stop_on_found: bool = True) -> Cell | List[Cell]:
         """
@@ -130,6 +138,9 @@ class Grid:
         neighbors = []
         for direction in try_directions:
             new_pos = list(map(sum, zip(direction, cell.get_pos())))
+            # Ignore the cell self
+            if tuple(new_pos) == cell.get_pos():
+                continue
             # Check if neighbor falls within the grid
             within_grid = True
             for i, coordinate in enumerate(new_pos):
@@ -212,6 +223,12 @@ class Grid:
             output += str(line)+"\n"
         return output
 
+    def __len__(self):
+        return self.max_dims
+
+    def __array__(self, dtype=None):
+        return np.array(self.grid, dtype=dtype)
+
 
 if __name__ == "__main__":
     # Task 16 of 2024 contained a grid, use it to test the Grid class
@@ -230,6 +247,9 @@ if __name__ == "__main__":
     s = grid.get_cell((0, 0))
     e = grid.get_cell((2, 4))
     d = grid.find_path(s, e, disallow={"value": "#"})
+    # 8 Neighbors
+    n = grid.get_adjacent(grid.grid[1][0], ortogonal=False)
+    print(f"Non-ortogonal neighbors: {n}, {[cell.get_pos() for cell in n]}; Self position: {grid.grid[1][0].get_pos()}")
     print(f"Find path distance: {d}")
     ns = e
     path = [ns.get_pos()]
