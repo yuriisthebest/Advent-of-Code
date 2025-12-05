@@ -33,10 +33,10 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** While loop that keeps track if a cell has changed this loop, then check each cell if it gets modified based on the values of the neighbors.
 * **Thoughts:** One of the easiest grid puzzles.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 5: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 5: Cafeteria
+* **Question:** Combine overlapping ranges to find all unqiue values contained in these ranges
+* **Solution:** Add each range to a list in sorted order based on the starting value, if the next range is overlapping the larger top value is used as the new top-value. Afterwards combine all ranges again if they have overlap.
+* **Thoughts:** I didn't do it in an optimal manner, the first part of my solution can probably be cut out and replaced by a simple sort on the first value (as described in the solution above). It's always tricky to combine overlapping ranges, there are quite a few different cases with larger ranges encompassing multiple smaller ones, but not all of them completely, so that's a nice challenge.
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 6: 
 * **Question:** 
