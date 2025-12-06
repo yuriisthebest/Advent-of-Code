@@ -31,7 +31,7 @@ def __load_txt(file_path: str):
     return data
 
 
-def __load_task(func, extension: str, year: int, task_num: int) -> tuple:
+def load_task(func, extension: str, year: int, task_num: int) -> tuple:
     """
     General purpose function to load a task
 
@@ -68,7 +68,7 @@ def load_task_json(year: int, task_num: int):
     :param task_num: The task number
     :return: Two datasets from the json files
     """
-    return __load_task(__load_json, "json", year, task_num)
+    return load_task(__load_json, "json", year, task_num)
 
 
 def load_task_txt(year: int, task_num: int):
@@ -79,7 +79,7 @@ def load_task_txt(year: int, task_num: int):
     :param task_num: The task number
     :return: Two datasets from the json files
     """
-    return __load_task(__load_txt, "txt", year, task_num)
+    return load_task(__load_txt, "txt", year, task_num)
 
 
 if __name__ == "__main__":
