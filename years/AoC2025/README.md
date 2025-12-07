@@ -21,11 +21,11 @@ A list of the tasks of this year with explanations, difficulty judgements,
 ### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 2: Gift Shop
 * **Question:** Find numbers with repeating segments within large number ranges.
 * **Solution:** There aren't that many numbers, so iteratively check each number if they contain a set of repeating digits. First chunk the number into same size chunks, then check if the set of these chunks if unique.
-* **Thoughts:** Neat and nice puzzle. There were not really any tricks, it was brute-forceable, but a nice little challenge.
+* **Thoughts:** Neat and nice puzzle. There were not really any tricks, it was brute-forcible, but a nice little challenge.
 
 ### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 3: Lobby
 * **Question:** Given a list of numbers, created the largest number of set size N in order that can be made.
-* **Solution:** It is always best to use the largest number first, provided that there are enough digits following it to finish the number. Therefore, create a window with a pointer to the first list value as start and one N digits from the end. Find the largest value in that window, then set the start pointer to the value next to that largest value and increase the stop pointer by one. Do this N times and you'll find the largest possible number with N digits.
+* **Solution:** It is always best to use the largest number first, provided that there are enough digits following it to finish the number. Therefore, create a window with a pointer to the first list value as start and one N digits from the end. Find the largest value in that window, then set the start pointer to the value next to that largest value and increase the stop pointer by one. Do this N times, and you'll find the largest possible number with N digits.
 * **Thoughts:** I enjoy puzzles like this where you need to think clearly about your approach. I quickly came to the realization above that greedily getting the largest possible number is always best so that was really nice.
 
 ### ![](https://via.placeholder.com/15/00ff00/000000?text=+) Day 4: Printing Department
@@ -34,19 +34,18 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Thoughts:** One of the easiest grid puzzles.
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 5: Cafeteria
-* **Question:** Combine overlapping ranges to find all unqiue values contained in these ranges
+* **Question:** Combine overlapping ranges to find all unique values contained in these ranges
 * **Solution:** Add each range to a list in sorted order based on the starting value, if the next range is overlapping the larger top value is used as the new top-value. Afterwards combine all ranges again if they have overlap.
 * **Thoughts:** I didn't do it in an optimal manner, the first part of my solution can probably be cut out and replaced by a simple sort on the first value (as described in the solution above). It's always tricky to combine overlapping ranges, there are quite a few different cases with larger ranges encompassing multiple smaller ones, but not all of them completely, so that's a nice challenge.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 6: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 6: Trash Compactor
+* **Question:** Help the cephalopods with some weird math equations. Figure out the column based writing of number to calculate the total score.
+* **Thoughts:** I had to rewrite my loading helping functions to not remove all the whitespace around the input, which was a bit annoying for part 2.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 7: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff0000/000000?text=+) Day 7: Laboratories
+* **Question:** A beam is shot from above and splits a number of times, how many paths are there possible to the bottom?
+* **Solution:** Keep for each vertical step track of which beams are present and how many paths are possible to get to that beam.
+* **Thoughts:** I fundamentally misunderstood part 1 of this exercise, which makes it really difficult. I believed that a splitter would only count if it actually produced new tachyons, so it would not count if both sides of a splitter were occupied by existing tachyons. That's much more complex to figure out than determining which splitters just get hit by a tachyon, which was the actual question. Once I figured that out it wasn't that difficult. Bonus issue: I knocked over my bottle of water so that caused a slight delay as well.
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 8: 
 * **Question:** 
@@ -71,69 +70,4 @@ A list of the tasks of this year with explanations, difficulty judgements,
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 12: 
 * **Question:** 
 * **Solution:** 
-* **Thoughts:** 
-
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 13: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
-
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 14: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
-
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 15: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
-
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 16: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
-
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 17: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
-
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 18: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
-
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 19: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
-
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 20: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
-
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 21: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
-
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 22: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
-
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 23: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
-
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 24: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
-
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 25: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+* **Thoughts:**
