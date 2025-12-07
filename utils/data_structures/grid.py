@@ -95,6 +95,18 @@ class Grid:
             cell = cell[dim_position]
         return cell
 
+    def contains_cell(self, position: tuple) -> bool:
+        """
+        Check if a given position in within the grid
+
+        :param position: A tuple representing a position in the grid
+        :return: True if the position is within the grid, otherwise False
+        """
+        for i, dim_position in enumerate(position):
+            if dim_position < 0 or dim_position >= self.max_dims[i]:
+                return False
+        return True
+
     def get_each_cells(self):
         for line in self.grid:
             for cell in line:
