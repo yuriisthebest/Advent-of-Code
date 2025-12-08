@@ -8,6 +8,7 @@ class Task:
     YEAR = 2021
     TASK_NUM = 2
     TEST_MODE = False
+    IS_TEST = False
 
     def load(self) -> tuple:
         test, task = load.load_task_txt(self.YEAR, self.TASK_NUM)
@@ -35,13 +36,17 @@ class Task:
 
     def run_part_1(self):
         # Run part 1
+        self.IS_TEST = True
         test1 = self.part_1(self.test)
+        self.IS_TEST = False
         task1 = self.part_1(self.task) if not self.TEST_MODE else None
         return test1, task1
 
     def run_part_2(self):
         # Run part 2
+        self.IS_TEST = True
         test2 = self.part_2(self.test)
+        self.IS_TEST = False
         task2 = self.part_2(self.task) if not self.TEST_MODE else None
         return test2, task2
 
