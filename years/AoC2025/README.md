@@ -1,5 +1,5 @@
 # Advent of Code 2025
-![Collected starts](https://img.shields.io/static/v1?style=for-the-badge&logo=apachespark&label=stars&message=0/50&color=success&logoColor=yellow)
+![Collected starts](https://img.shields.io/static/v1?style=for-the-badge&logo=apachespark&label=stars&message=18/24&color=success&logoColor=yellow)
 
 ## Tasks
 A list of the tasks of this year with explanations, difficulty judgements,
@@ -33,7 +33,7 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** While loop that keeps track if a cell has changed this loop, then check each cell if it gets modified based on the values of the neighbors.
 * **Thoughts:** One of the easiest grid puzzles.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 5: Cafeteria
+### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 5: Cafeteria
 * **Question:** Combine overlapping ranges to find all unique values contained in these ranges
 * **Solution:** Add each range to a list in sorted order based on the starting value, if the next range is overlapping the larger top value is used as the new top-value. Afterwards combine all ranges again if they have overlap.
 * **Thoughts:** I didn't do it in an optimal manner, the first part of my solution can probably be cut out and replaced by a simple sort on the first value (as described in the solution above). It's always tricky to combine overlapping ranges, there are quite a few different cases with larger ranges encompassing multiple smaller ones, but not all of them completely, so that's a nice challenge.
@@ -47,15 +47,15 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Keep for each vertical step track of which beams are present and how many paths are possible to get to that beam.
 * **Thoughts:** I fundamentally misunderstood part 1 of this exercise, which makes it really difficult. I believed that a splitter would only count if it actually produced new tachyons, so it would not count if both sides of a splitter were occupied by existing tachyons. That's much more complex to figure out than determining which splitters just get hit by a tachyon, which was the actual question. Once I figured that out it wasn't that difficult. Bonus issue: I knocked over my bottle of water so that caused a slight delay as well.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 8: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 8: Playground
+* **Question:** Connect junction boxes sequentially using the smallest non-connected distance between two boxes. Which two boxes are last to connect the entire grid together?
+* **Solution:** Create a sorted distance list between any pair of junction boxes. Then sequentially connect them while keeping track of the networks that it generates. If all boxes are in one network return the results.
+* **Thoughts:** I tried out my new PriorityQueue class that can take care of sorting, adding and taking the smallest values. It's a little cumbersome to use, but it's nice to use some custom classes.
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 9: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/000000/000000?text=+) Day 9: Movie Theater
+* **Question:** Find the largest rectangle that fits within an oddly shaped polyhedron.
+* **Solution:** Brute-force it baby. I tried many kinds of solutions, eventually settling on keeping track of tiles just next to the shape. Sort the possible rectangles and determine the first one whose edges do not contain any of these outside tiles. Other ideas included: Check if the edge line intersects / crosses a boundary line (the edge case where they intersect at the edge of a segment is very common and for me difficult to deal with); Use my Volumes class to determine overlap and feasibility (unfortunately the class isn't really developed for that yet); Create a 100.000 by 100.000 grid to replicate the data and keep track of which tiles have been seen inside or outside the region (my IDE crashed); Remove all in-between values where no red tiles, corner points, are to reduce the spatial dimentionality cause brute-force methods to be much much faster (the translation is difficult to find the largest rectangle afterwards).
+* **Thoughts:** AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH. HOW DO I NOT KNOW HOW TO CALCULATE THE AREA OF A RECTANGLE! **A RECTANGLE!**
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 10: 
 * **Question:** 
