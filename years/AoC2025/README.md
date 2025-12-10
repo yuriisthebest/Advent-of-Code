@@ -57,10 +57,9 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Solution:** Brute-force it baby. I tried many kinds of solutions, eventually settling on keeping track of tiles just next to the shape. Sort the possible rectangles and determine the first one whose edges do not contain any of these outside tiles. Other ideas included: Check if the edge line intersects / crosses a boundary line (the edge case where they intersect at the edge of a segment is very common and for me difficult to deal with); Use my Volumes class to determine overlap and feasibility (unfortunately the class isn't really developed for that yet); Create a 100.000 by 100.000 grid to replicate the data and keep track of which tiles have been seen inside or outside the region (my IDE crashed); Remove all in-between values where no red tiles, corner points, are to reduce the spatial dimentionality cause brute-force methods to be much much faster (the translation is difficult to find the largest rectangle afterwards).
 * **Thoughts:** AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH. HOW DO I NOT KNOW HOW TO CALCULATE THE AREA OF A RECTANGLE! **A RECTANGLE!**
 
-### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 10: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:** 
+### ![](https://via.placeholder.com/15/ff9900/000000?text=+) Day 10: Factory
+* **Question:** Find the mimimum amount of buttons to press to get to the specified values for lights and jolts.
+* **Solution:** Parse the input to create linear optimization constraints. Then solve it while optimizing for the least presses.
 
 ### ![](https://via.placeholder.com/15/ffffff/000000?text=+) Day 11: 
 * **Question:** 
