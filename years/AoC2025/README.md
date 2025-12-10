@@ -6,11 +6,13 @@ A list of the tasks of this year with explanations, difficulty judgements,
  thoughts and a quick overview of my solutions.
 
 ### Personal Difficulty 
-- ![](https://via.placeholder.com/15/00ff00/000000?text=+) Very Easy
-- ![](https://via.placeholder.com/15/ccff00/000000?text=+) Easy
-- ![](https://via.placeholder.com/15/ff9900/000000?text=+) Medium
-- ![](https://via.placeholder.com/15/ff0000/000000?text=+) Hard
-- ![](https://via.placeholder.com/15/000000/000000?text=+) Very Hard
+- ![](https://via.placeholder.com/15/00ff00/000000?text=+) Very Easy ![Static Badge](https://img.shields.io/badge/Very_Easy-00ff00?style=plastic)
+- ![](https://via.placeholder.com/15/ccff00/000000?text=+) Easy ![Static Badge](https://img.shields.io/badge/Easy-ccff00?style=plastic)
+- ![](https://via.placeholder.com/15/ff9900/000000?text=+) Medium ![Static Badge](https://img.shields.io/badge/Medium-ff9900?style=plastic)
+- ![](https://via.placeholder.com/15/ff0000/000000?text=+) Hard ![Static Badge](https://img.shields.io/badge/Hard-ff0000?style=plastic)
+- ![](https://via.placeholder.com/15/000000/000000?text=+) Very Hard ![Static Badge](https://img.shields.io/badge/Very_Hard-000000?style=plastic)
+![Static Badge](https://img.shields.io/badge/Empty-ffffff?style=plastic)
+
 
 
 ### ![](https://via.placeholder.com/15/ccff00/000000?text=+) Day 1: Secret Entrance
