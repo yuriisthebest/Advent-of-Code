@@ -15,6 +15,14 @@ class Tags:
         """
         return self.__tags[tag_name] if self.has_tag(tag_name) else None
 
+    def get_all_tags(self) -> dict:
+        """
+        Get the full tag dictionary
+
+        :return: Dictionary containing all key-values pairs of this object
+        """
+        return self.__tags
+
     def has_tag(self, tag_name: str) -> bool:
         """
         Checks if the cell has a given tag

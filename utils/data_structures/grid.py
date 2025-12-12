@@ -37,6 +37,9 @@ class Cell(Tags):
         sort_tag = self.get("sort_tag") if self.has_tag("sort_tag") else "value"
         return self.get(sort_tag) < other.get(sort_tag)
 
+    def __hash__(self):
+        return hash(tuple([(key, value) for key, value in self.get_all_tags().items()]))
+
     def get_pos(self) -> tuple:
         """
         Retrieve the coordinates of the cell
@@ -240,6 +243,9 @@ class Grid:
 
     def __array__(self, dtype=None):
         return np.array(self.grid, dtype=dtype)
+
+    def __hash__(self):
+        return hash(tuple([tuple([cell for cell in line]) for line in self.grid]))
 
 
 if __name__ == "__main__":
