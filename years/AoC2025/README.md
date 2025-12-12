@@ -1,5 +1,5 @@
 # Advent of Code 2025
-![Collected starts](https://img.shields.io/static/v1?style=for-the-badge&logo=apachespark&label=stars&message=22/24&color=success&logoColor=yellow)
+![Collected starts](https://img.shields.io/static/v1?style=for-the-badge&logo=apachespark&label=stars&message=24/24&color=success&logoColor=yellow)
 
 ## Tasks
 A list of the tasks of this year with explanations, difficulty judgements,
@@ -67,7 +67,6 @@ A list of the tasks of this year with explanations, difficulty judgements,
 * **Question:** Find the number of paths in a graph from a set source to target while passing two other nodes.
 * **Solution:** First find which nodes will be visited. Then start from the start and only add neighbors if all the nodes pointing to the neighbor have been processed. Keep track of the count of visits for each node. Then return the count for the target node. Do this 3 times from start to intermediate node 1, internode 1 to internode 2 and internode 2 to the target.
 
-### ![Static Badge](https://img.shields.io/badge/Empty-ffffff?style=plastic) Day 12: 
-* **Question:** 
-* **Solution:** 
-* **Thoughts:**
+### Day 12: Christmas Tree Farm ![Static Badge](https://img.shields.io/badge/Easy-ccff00?style=plastic)
+* **Question:** Check the input.
+* **Solution:** Checking the input and submitting the first result I got.
